@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W         &kp E             &kp R             &kp T                                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LC(LCTRL) A  &kp S         &kp D             &kp F             &kp G        &kp LS(LG(S))                   &kp MINUS                         &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z            &kp X         &kp C             &kp V             &kp B        &mt LC(LA(LEFT_GUI)) GRAVE      &mt LG(LC(LA(LEFT_SHIFT))) EQUAL  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT   &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 INT_HENKAN  &lt 2 SPACE  &mt CAPSLOCK INT_MUHENKAN       &kp BACKSPACE                     &lt 2 ENTER                             &kp SLASH
+&kp Q            &kp W         &kp E             &kp R                     &kp T                                                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&mt LC(LCTRL) A  &kp S         &kp D             &kp F                     &kp G        &kp LS(LG(S))                              &kp MINUS                         &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z            &kp X         &kp C             &kp V                     &kp B        &mt LC(LA(LEFT_GUI)) GRAVE                 &mt LG(LC(LA(LEFT_SHIFT))) EQUAL  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT   &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 LS(LA(LC(LG(N5))))  &lt 2 SPACE  &mt CAPSLOCK LS(LA(LC(LG(NUMBER_6))))      &kp BACKSPACE                     &lt 2 ENTER                             &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
