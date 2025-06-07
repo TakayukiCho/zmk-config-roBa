@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W         &kp E             &kp R                     &kp T                                                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LC(LCTRL) A  &kp S         &kp D             &kp F                     &kp G        &kp LS(LG(S))                              &kp MINUS                         &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z            &kp X         &kp C             &kp V                     &kp B        &mt LC(LA(LEFT_GUI)) GRAVE                 &mt LG(LC(LA(LEFT_SHIFT))) EQUAL  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT   &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 LS(LA(LC(LG(N5))))  &lt 2 SPACE  &mt CAPSLOCK LS(LA(LC(LG(NUMBER_6))))      &kp BACKSPACE                     &lt 2 ENTER                             &kp SLASH
+&kp Q           &kp W         &kp E             &kp R                     &kp T                                                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&mt LCTRL A     &kp S         &kp D             &kp F                     &kp G        &kp LS(LG(S))                              &kp MINUS                         &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z           &kp X         &kp C             &kp V                     &kp B        &mt LC(LA(LEFT_GUI)) GRAVE                 &mt LG(LC(LA(LEFT_SHIFT))) EQUAL  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 LS(LA(LC(LG(N5))))  &lt 2 SPACE  &mt CAPSLOCK LS(LA(LC(LG(NUMBER_6))))      &kp BACKSPACE                     &lt 2 ENTER                             &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -80,10 +80,10 @@
 
         Number {
             bindings = <
-&trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                       &kp PERCENT  &kp PLUS              &kp MINUS              &kp ASTERISK  &kp SLASH
-&trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans      &kp F13  &kp LEFT     &kp DOWN              &kp UP_ARROW           &kp RIGHT     &kp EQUAL
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &trans   &kp N0       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_3  &kp EQUAL
-&trans        &trans        &trans        &trans        &trans  &trans      &trans   &trans                                                                  &kp PERCENT
+&trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                       &kp PERCENT   &kp PLUS              &kp MINUS              &kp ASTERISK  &kp SLASH
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans      &kp F13  &kp NUMBER_6  &kp N7                &kp N8                 &kp N9        &kp N0
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &trans   &kp N0        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_3  &kp EQUAL
+&trans        &trans        &trans        &trans        &trans  &trans      &trans   &trans                                                                   &kp PERCENT
             >;
         };
 
@@ -115,7 +115,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PAGE_UP) PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         SCROLL {
