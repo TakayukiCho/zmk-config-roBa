@@ -77,10 +77,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W      &kp E      &kp R                 &kp T                                                                                                        &kp Y                   &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A           &kp S      &kp D      &kp F                 &kp G                                &kp LS(LG(S))                                  &kp MINUS                &kp H                   &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z                 &kp X      &kp C      &kp V                 &kp B                                &mt RIGHT_GUI TAB                              &mt RIGHT_SHIFT EQUAL    &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
-&kp NON_US_BACKSLASH  &kp LCTRL  &kp GRAVE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 1 LS(LA(LC(LG(N5))))  &mt LEFT_COMMAND LS(LA(LC(LG(NUMBER_6))))      &lt_to_layer_0 6 DELETE  &lt_to_layer_0 2 ENTER                             &kp SLASH
+&kp Q                 &kp W              &kp E      &kp R                 &kp T                                                                                                        &kp Y                   &kp U  &kp I      &kp O    &kp P
+&mt LCTRL A           &kp S              &kp D      &kp F                 &kp G                                &kp LS(LG(S))                                  &kp MINUS                &kp H                   &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z                 &kp X              &kp C      &kp V                 &kp B                                &mt RIGHT_GUI TAB                              &mt RIGHT_SHIFT EQUAL    &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
+&kp NON_US_BACKSLASH  &kp RIGHT_CONTROL  &kp GRAVE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 1 LS(LA(LC(LG(N5))))  &mt LEFT_COMMAND LS(LA(LC(LG(NUMBER_6))))      &lt_to_layer_0 6 DELETE  &lt_to_layer_0 2 ENTER                             &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -88,29 +88,31 @@
 
         Number {
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                        &kp EQUAL     &kp PLUS              &kp MINUS              &kp ASTERISK  &kp SLASH
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                        &kp PERCENT   &kp PLUS              &kp MINUS              &kp ASTERISK  &kp SLASH
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans       &kp F13  &kp NUMBER_6  &kp N7                &kp N8                 &kp N9        &kp N0
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp F11      &kp F12  &kp N0        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_3  &kp EQUAL
-&trans        &trans        &trans        &trans        &trans  &trans       &trans   &trans                                                                   &kp PERCENT
+&trans        &trans        &trans        &trans        &trans  &kp F11      &kp F12  &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &kp EQUAL
+&trans        &trans        &trans        &trans        &trans  &trans       &trans   &trans                                                                   &trans
             >;
         };
 
         Mark {
             bindings = <
-&kp F6                      &kp F7           &kp F8           &kp F9           &kp F10                                                   &kp F11           &kp F12            &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp EXCLAMATION             &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp CARET         &kp AMPERSAND      &kp ASTERISK          &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans                      &trans           &trans           &trans           &trans       &trans                       &trans          &trans                                                                           &kp PIPE
+&kp F6           &kp F7       &kp F8    &kp F9      &kp F10                                                   &kp F11    &kp F12        &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp CARET  &kp AMPERSAND  &kp ASTERISK          &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans           &trans       &trans    &trans      &trans       &trans                       &trans          &trans     &trans         &kp LEFT_BRACE        &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans           &trans       &trans    &trans      &trans       &trans                       &trans          &trans                                                                &kp PIPE
             >;
         };
 
         FNmedia {
             bindings = <
-&kp C_BRI_DEC   &kp C_BRI_INC           &kp CAPS          &kp LC(TAB)              &ext_power EP_TOG                            &kp C_BRIGHTNESS_INC  &trans          &kp C_MUTE       &kp K_VOLUME_DOWN     &kp K_VOLUME_UP
-&kp LESS_THAN   &kp GREATER_THAN        &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp F5             &trans      &kp F6        &kp F7                &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans            &kp LG(LS(RIGHT_ARROW))  &trans             &trans      &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 3    &trans           &trans                &kp F12
-&trans          &trans                  &trans            &trans                   &trans             &trans      &trans        &trans                                                                       &trans
+&kp C_BRI_DEC  &kp C_BRI_INC     &kp CAPS          &kp LC(TAB)        &ext_power EP_TOG                      &kp C_BRIGHTNESS_INC  &trans          &kp C_MUTE       &kp K_VOLUME_DOWN     &kp K_VOLUME_UP
+&kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans             &trans      &trans  &trans                &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans         &trans            &trans            &trans             &trans             &trans      &trans  &trans                &trans          &trans           &trans                &trans
+&trans         &trans            &trans            &trans             &trans             &trans      &trans  &trans                                                                       &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         MOUSE {
@@ -139,7 +141,7 @@
         layer_6 {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &kp I
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans          &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                    &bt BT_CLR_ALL
             >;
