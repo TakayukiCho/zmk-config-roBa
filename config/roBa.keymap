@@ -6,7 +6,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &sl { release-after-ms = <250>; };
 
