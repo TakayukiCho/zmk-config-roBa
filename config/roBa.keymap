@@ -23,6 +23,11 @@
             key-positions = <18 19>;
             layers = <0>;
         };
+
+        btn {
+            bindings = <&bt BT_NXT>;
+            key-positions = <34 9>;
+        };
     };
 
     macros {
@@ -62,7 +67,7 @@
 &kp Q                     &kp W          &kp E      &kp R                 &kp T                                                                                                 &kp Y                   &kp U  &kp I      &kp O    &kp P
 &mt LEFT_CONTROL A        &kp S          &kp D      &kp F                 &kp G                                 &kp LS(LG(S))                 &kp MINUS                         &kp H                   &kp J  &kp K      &kp L    &kp SEMICOLON
 &kp Z                     &kp X          &kp C      &kp V                 &kp B                                 &mt LEFT_ALT BACKSPACE        &mt LG(LA(LC(LEFT_SHIFT))) EQUAL  &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
-&kp LA(LC(LEFT_COMMAND))  &kp BACKSLASH  &kp GRAVE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 1 LS(LA(LC(LG(TAB))))  &mt LEFT_COMMAND LS(TAB)      &kp DEL                           &lt_to_layer_0 2 ENTER                             &kp SLASH
+&kp LA(LC(LEFT_COMMAND))  &kp BACKSLASH  &kp GRAVE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 1 LS(LA(LC(LG(TAB))))  &mt LEFT_COMMAND LS(TAB)      &kp DELETE                        &lt_to_layer_0 2 ENTER                             &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -79,10 +84,10 @@
 
         Mark {
             bindings = <
-&kp F6           &kp F7       &kp F8    &kp F9      &kp F10                                                   &kp F11    &kp F12        &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans           &trans       &trans    &trans      &trans       &trans                       &trans          &trans     &trans         &kp LEFT_BRACE  &kp LEFT_BRACE    &kp RIGHT_BRACE
-&trans           &trans       &trans    &trans      &trans       &trans                       &trans          &trans                                                      &bt BT_DISC 1
+&kp F6           &kp F7       &kp F8    &kp F9      &kp F10                                                   &kp F11    &kp F12        &trans        &trans            &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans           &trans       &trans    &trans      &trans       &trans                       &trans          &trans     &trans         &trans        &trans            &trans
+&trans           &trans       &trans    &trans      &trans       &trans                       &trans          &trans                                                    &trans
             >;
         };
 
@@ -99,10 +104,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                         &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
