@@ -74,10 +74,10 @@
 
         default_layer {
             bindings = <
-&kp Q                     &kp W          &kp E      &kp R                 &kp T                                                                                 &kp Y                   &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A        &kp S          &kp D      &kp F                 &kp G                 &kp LS(LG(S))                 &kp MINUS                         &kp H                   &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z                     &kp X          &kp C      &kp V                 &kp B                 &mt LEFT_ALT DELETE           &mt LG(LA(LC(LEFT_SHIFT))) EQUAL  &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
-&kp LA(LC(LEFT_COMMAND))  &kp BACKSLASH  &kp GRAVE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 1 TAB  &mt LEFT_COMMAND LS(TAB)      &kp BACKSPACE                     &lt_to_layer_0 2 ENTER                             &kp SLASH
+&kp Q               &kp W          &kp E      &kp R                 &kp T                                                                                    &kp Y                   &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S          &kp D      &kp F                 &kp G                 &kp LS(LG(S))                    &kp MINUS                         &kp H                   &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z               &kp X          &kp C      &kp V                 &kp B                 &mt LA(LC(LEFT_GUI)) DELETE      &mt LG(LA(LC(LEFT_SHIFT))) EQUAL  &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
+&kp LEFT_ALT        &kp BACKSLASH  &kp GRAVE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 1 TAB  &mt LEFT_COMMAND LS(TAB)         &kp BACKSPACE                     &lt_to_layer_0 2 ENTER                             &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
