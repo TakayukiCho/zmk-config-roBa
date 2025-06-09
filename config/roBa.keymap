@@ -10,9 +10,10 @@
 &sl { release-after-ms = <250>; };
 
 &mt {
-    flavor = "tap-preferred";
-    quick-tap-ms = <180>;
+    flavor = "balanced";
+    quick-tap-ms = <0>;
 };
+
 
 / {
     combos {
