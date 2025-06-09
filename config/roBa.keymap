@@ -28,6 +28,16 @@
             bindings = <&bt BT_NXT>;
             key-positions = <34 9>;
         };
+
+        tojapanese {
+            bindings = <&kp LS(LA(LC(LG(J))))>;
+            key-positions = <11 12>;
+        };
+
+        toenglish {
+            bindings = <&kp LS(LA(LC(LG(K))))>;
+            key-positions = <20 18>;
+        };
     };
 
     macros {
@@ -66,7 +76,7 @@
             bindings = <
 &kp Q                     &kp W          &kp E      &kp R                 &kp T                                                                                 &kp Y                   &kp U  &kp I      &kp O    &kp P
 &mt LEFT_CONTROL A        &kp S          &kp D      &kp F                 &kp G                 &kp LS(LG(S))                 &kp MINUS                         &kp H                   &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z                     &kp X          &kp C      &kp V                 &kp B                 &mt LEFT_ALT DEL              &mt LG(LA(LC(LEFT_SHIFT))) EQUAL  &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
+&kp Z                     &kp X          &kp C      &kp V                 &kp B                 &mt LEFT_ALT DELETE           &mt LG(LA(LC(LEFT_SHIFT))) EQUAL  &kp N                   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
 &kp LA(LC(LEFT_COMMAND))  &kp BACKSLASH  &kp GRAVE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 1 TAB  &mt LEFT_COMMAND LS(TAB)      &kp BACKSPACE                     &lt_to_layer_0 2 ENTER                             &kp SLASH
             >;
 
